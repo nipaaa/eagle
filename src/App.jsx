@@ -1,10 +1,25 @@
+import admin from "./assets/icon/admin.svg";
+import mikeactive from "./assets/icon/mikeActive.svg";
+import mikedeactive from "./assets/icon/mikeDeact.svg";
+import call from "./assets/icon/call.png";
+import callLeave from "./assets/icon/callLeave.png";
+import soundOn from "./assets/icon/soundOn.png";
+import soundOff from "./assets/icon/soundOff.png";
+import camera from "./assets/icon/camera.svg";
+import fullscreen from "./assets/icon/fullscreen.svg";
+import audio from "./assets/icon/audio.png";
+import settings from "./assets/icon/settings.svg";
+import logo from "./assets/Logo/logo.svg";
+import menu from "./assets/Logo/menu.png";
+import cross from "./assets/icon/cross.svg";
+
 function App() {
   return (
     <div>
       <main className="main__body">
         <div className="admine  absolute top-[257px] flex">
           <div className="adminImg w-[49px] h-[57px] flex justify-center items-center bg-[#000c] cursor-pointer">
-            <img className="" src="assets/image/icon/admin.svg" alt="icon" />
+            <img className="" src={admin} alt="icon" />
           </div>
 
           <div className="admin__logs bg-[#000c] w-[330px]">
@@ -18,10 +33,10 @@ function App() {
                 <div className="flex items-center gap-[20px]">
                   <div>
                     <span className="mike mikeAct">
-                      <img src="assets/image/icon/mikeActive.svg" alt="icon" />
+                      <img src={mikeactive} alt="icon" />
                     </span>
                     <span className="mike mikeDeact hidden">
-                      <img src="assets/image/icon/mikeDeact.svg" alt="icon" />
+                      <img src={mikedeactive} alt="icon" />
                     </span>
                   </div>
                   <div>
@@ -51,26 +66,26 @@ function App() {
                 <div className="flex items-center gap-[20px] hidden">
                   <div>
                     <span className="mike mikeAct">
-                      <img src="assets/image/icon/mikeActive.svg" alt="icon" />
+                      <img src={mikeactive} alt="icon" />
                     </span>
                     <span className="mike mikeDeact hidden">
-                      <img src="assets/image/icon/mikeDeact.svg" alt="icon" />
+                      <img src={mikedeactive} alt="icon" />
                     </span>
                   </div>
                   <div>
                     <span className="call callOn">
-                      <img src="assets/image/icon/call.png" alt="icon" />
+                      <img src={call} alt="icon" />
                     </span>
                     <span className="call callOf hidden">
-                      <img src="assets/image/icon/callLeave.png" alt="icon" />
+                      <img src={callLeave} alt="icon" />
                     </span>
                   </div>
                   <div>
                     <span className="sound soundOn">
-                      <img src="assets/image/icon/soundOn.png" alt="icon" />
+                      <img src={soundOn} alt="icon" />
                     </span>
                     <span className="sound soundOff hidden">
-                      <img src="assets/image/icon/soundOff.png" alt="icon" />
+                      <img src={soundOff} alt="icon" />
                     </span>
                   </div>
                 </div>
@@ -84,26 +99,26 @@ function App() {
                 <div className="flex items-center gap-[20px] hidden">
                   <div>
                     <span className="mike mikeAct">
-                      <img src="assets/image/icon/mikeActive.svg" alt="icon" />
+                      <img src={mikeactive} alt="icon" />
                     </span>
                     <span className="mike mikeDeact hidden">
-                      <img src="assets/image/icon/mikeDeact.svg" alt="icon" />
+                      <img src={mikedeactive} alt="icon" />
                     </span>
                   </div>
                   <div>
                     <span className="call callOn">
-                      <img src="assets/image/icon/call.png" alt="icon" />
+                      <img src={call} alt="icon" />
                     </span>
                     <span className="call callOf hidden">
-                      <img src="assets/image/icon/callLeave.png" alt="icon" />
+                      <img src={callLeave} alt="icon" />
                     </span>
                   </div>
                   <div>
                     <span className="sound soundOn">
-                      <img src="assets/image/icon/soundOn.png" alt="icon" />
+                      <img src={soundOn} alt="icon" />
                     </span>
                     <span className="sound soundOff hidden">
-                      <img src="assets/image/icon/soundOff.png" alt="icon" />
+                      <img src={soundOff} alt="icon" />
                     </span>
                   </div>
                 </div>
@@ -117,26 +132,26 @@ function App() {
                 <div className="flex items-center gap-[20px] hidden">
                   <div>
                     <span className="mike mikeAct">
-                      <img src="assets/image/icon/mikeActive.svg" alt="icon" />
+                      <img src={mikeactive} alt="icon" />
                     </span>
                     <span className="mike mikeDeact hidden">
-                      <img src="assets/image/icon/mikeDeact.svg" alt="icon" />
+                      <img src={mikedeactive} alt="icon" />
                     </span>
                   </div>
                   <div>
                     <span className="call callOn">
-                      <img src="assets/image/icon/call.png" alt="icon" />
+                      <img src={call} alt="icon" />
                     </span>
                     <span className="call callOf hidden">
-                      <img src="assets/image/icon/callLeave.png" alt="icon" />
+                      <img src={callLeave} alt="icon" />
                     </span>
                   </div>
                   <div>
                     <span className="sound soundOn">
-                      <img src="assets/image/icon/soundOn.png" alt="icon" />
+                      <img src={soundOn} alt="icon" />
                     </span>
                     <span className="sound soundOff hidden">
-                      <img src="assets/image/icon/soundOff.png" alt="icon" />
+                      <img src={soundOff} alt="icon" />
                     </span>
                   </div>
                 </div>
@@ -150,33 +165,13 @@ function App() {
             <input type="range" min="1" max="100" value="50" />
           </div>
           <div className="float flex gap-[26px] p-[14px] bg-[#000c] w-[192px] ">
-            <img
-              className="capture"
-              src="assets/image/icon/camera.svg"
-              alt="icon"
-            />
-            <img
-              className="square"
-              src="assets/image/icon/fullscreen.svg"
-              alt="icon"
-            />
+            <img className="capture" src={camera} alt="icon" />
+            <img className="square" src={fullscreen} alt="icon" />
             <span>
-              <img
-                className="setSound"
-                src="assets/image/icon/soundOn.png"
-                alt="icon"
-              />
-              <img
-                className="setSound hidden"
-                src="assets/image/icon/audio.png"
-                alt="icon"
-              />
+              <img className="setSound" src={soundOn} alt="icon" />
+              <img className="setSound hidden" src={audio} alt="icon" />
             </span>
-            <img
-              className="sidebarBtn"
-              src="assets/image/icon/settings.svg"
-              alt="icon"
-            />
+            <img className="sidebarBtn" src={settings} alt="icon" />
           </div>
         </div>
         <div className="float__com bg-[#000c] max-w-[423px] h-[76px] overflow-hidden absolute right-[16px] top-[20px] p-[12px] text-[#ccc] leading-[28px] grid gap-[] justify-between">
@@ -190,7 +185,7 @@ function App() {
             <img
               id="cross"
               className="ms-auto cursor-pointer"
-              src="assets/image/icon/cross.svg"
+              src={cross}
               alt="icon"
             />
           </span>
@@ -199,11 +194,11 @@ function App() {
         <div className="sidebar py-[17px] px-[15px] w-[300px] bg-[#000c] text-[#fff] text-[18px]">
           <div className="flex gap-[20px] justify-between items-center mb-[45px]">
             <a href="#!">
-              <img src="assets/image/Logo/logo.svg" alt="logo" />
+              <img src={logo} alt="logo" />
             </a>
             <img
               className="h-[18px] w-[18px] cursor-pointer"
-              src="assets/image/Logo/menu.png"
+              src={menu}
               alt="icon"
             />
           </div>
